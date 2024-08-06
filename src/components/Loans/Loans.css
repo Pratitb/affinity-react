@@ -1,0 +1,7 @@
+.loans_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0 20px;
+}/*# sourceMappingURL=Loans.css.map */

@@ -1,0 +1,60 @@
+.loan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0 10px;
+  flex: 1 1 0;
+  padding: 18px 10px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.loan_name {
+  font-size: 11px;
+  color: #718ebf;
+  text-transform: capitalize;
+}
+
+.card_loan_amt {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.personal .loan_icon,
+.corporate .loan_icon,
+.business .loan_icon,
+.custom .loan_icon {
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.personal .loan_icon {
+  color: #396aff;
+  background-color: #e7edff;
+}
+
+.corporate .loan_icon {
+  color: #ffbb38;
+  background-color: #fff5d9;
+}
+
+.business .loan_icon {
+  color: #ff82ac;
+  background-color: #ffe0eb;
+}
+
+.custom .loan_icon {
+  color: #16dbcc;
+  background-color: #dcfaf8;
+}
+
+@media screen and (min-width: 1200px) {
+  .loan_name {
+    font-size: 16px;
+  }
+  .card_loan_amt {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=Loan.css.map */

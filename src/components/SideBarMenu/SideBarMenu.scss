@@ -1,0 +1,23 @@
+@import '../../Variables.scss';
+
+.sidebar_menu {
+	width: 100%;
+	max-width: 220px;
+	height: 100vh;
+	padding: 30px;
+	border-right: 1px solid #e6eff5;
+}
+.sidebar_links {
+	display: flex;
+	flex-direction: column;
+	gap: 5px 0;
+}
+
+@media screen and (min-width: 1200px) {
+	.sidebar_links {
+		gap: 10px 0;
+	}
+	.link_text {
+		font-size: 15px;
+	}
+}

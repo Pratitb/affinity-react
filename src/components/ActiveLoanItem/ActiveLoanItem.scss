@@ -1,0 +1,40 @@
+@import '../../Mixins.scss';
+.item {
+	@include flex(initial, center, row);
+	padding: 8px 0;
+	border-top: 1px solid #f2f4f7;
+}
+.item .table_item {
+	font-size: 11px;
+	color: #232323;
+}
+tr,
+td {
+	width: 100%;
+}
+.repay {
+	@include flex(center, center, row);
+	cursor: pointer;
+	border: 1px solid;
+	border-radius: 20px;
+	width: 100%;
+	max-width: 80px;
+	height: 24px;
+	font-size: 10px;
+}
+.repay:hover {
+	border: 1px solid #1814f3;
+	color: #1814f3;
+}
+
+@media screen and (min-width: 1200px) {
+	.item {
+		padding: 12px 0;
+	}
+	.item .table_item {
+		font-size: 14px;
+	}
+	.repay {
+		font-size: 12px;
+	}
+}
