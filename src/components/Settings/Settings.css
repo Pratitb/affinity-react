@@ -1,1 +1,10 @@
-/*# sourceMappingURL=Settings.css.map */
+.settings_btn {
+  background-color: #f5f7fa;
+  font-size: 40px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.settings_btn {
+  color: #8ba3cb;
+}/*# sourceMappingURL=Settings.css.map */

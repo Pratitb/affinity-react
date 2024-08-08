@@ -1,4 +1,4 @@
-import './Loan.css';
+import './Loan.scss';
 
 function Loan({ individualLoan }) {
 	const LoanIcon = individualLoan.icon;
@@ -7,7 +7,7 @@ function Loan({ individualLoan }) {
 			<LoanIcon className="loan_icon" />
 			<div className="loan_content">
 				<p className="loan_name">{individualLoan.name} loans</p>
-				<p className="card_loan_amt">{individualLoan.amt}</p>
+				<p className="loan_card_amt">{individualLoan.amt}</p>
 			</div>
 		</div>
 	);

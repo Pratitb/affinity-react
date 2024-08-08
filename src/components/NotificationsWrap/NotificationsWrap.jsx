@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import NotificationsMenu from '../NotificationsMenu/NotificationsMenu';
-import './NotificationsWrap.css';
+import './NotificationsWrap.scss';
 import { FaRegBell } from 'react-icons/fa';
 
 function NotificationsWrap({ notifications }) {
@@ -27,15 +27,15 @@ function NotificationsWrap({ notifications }) {
 		return () => {
 			document.removeEventListener('mousedown', handleClickOutside);
 		};
-	}, []);
+	}, ['']);
 	// --------------------------------------------------------------------------------------------
 
 	return (
-		<div className="notification_wrap">
+		<div className="notification">
 			{/* NOTIFICATION ICON */}
 			<FaRegBell
-				className={`header_notification ${
-					showNotifications ? 'header_notification_active' : ''
+				className={`notification_icon ${
+					showNotifications ? 'notification_icon_active' : ''
 				}`}
 				onClick={toggleNotifications}
 			/>

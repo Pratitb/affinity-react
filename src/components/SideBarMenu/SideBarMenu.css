@@ -1,13 +1,14 @@
-.sidebar_menu {
+.sidebar {
   width: 100%;
   max-width: 220px;
   height: 100vh;
   padding: 30px;
   border-right: 1px solid #e6eff5;
 }
-
 .sidebar_links {
   display: flex;
+  justify-content: initial;
+  align-items: initial;
   flex-direction: column;
   gap: 5px 0;
 }
@@ -16,7 +17,7 @@
   .sidebar_links {
     gap: 10px 0;
   }
-  .link_text {
+  .sidebar_links_link_text {
     font-size: 15px;
   }
 }/*# sourceMappingURL=SideBarMenu.css.map */

@@ -1,0 +1,40 @@
+.accordion {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.accordion_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 13px;
+  padding: 10px 10px 0;
+  color: #3a3839;
+  text-transform: capitalize;
+}
+
+.accordion_arrow {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  color: #3a3839;
+}
+
+.accordion_content {
+  visibility: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  height: 0;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 0 10px 10px;
+  color: #3a3839;
+  transition: all 0.3s;
+}
+
+.show_content {
+  visibility: visible;
+  opacity: 1;
+  height: 100px;
+}/*# sourceMappingURL=Accordion.css.map */

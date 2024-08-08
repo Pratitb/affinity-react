@@ -7,25 +7,20 @@
   border-radius: 10px;
   cursor: pointer;
 }
-
 .sidebar_link:hover {
   background-color: rgba(224, 224, 224, 0.4);
 }
-
-.link_text {
+.sidebar_icon {
+  font-size: 22px;
+  color: #b1b1b1;
+}
+.sidebar_link_text {
   font-size: 14px;
   margin-left: 20px;
   color: #b1b1b1;
   text-transform: capitalize;
   cursor: pointer;
 }
-
-.sidebar_active_link .link_text,
-.sidebar_active_link .sidebar_icon {
+.sidebar_active_link .sidebar_link_text, .sidebar_active_link .sidebar_icon {
   color: #1814f3;
-}
-
-.sidebar_icon {
-  font-size: 22px;
-  color: #b1b1b1;
 }/*# sourceMappingURL=SideBarMenuItem.css.map */

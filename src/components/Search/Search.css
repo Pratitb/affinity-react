@@ -1,8 +1,7 @@
-.search_wrap {
+.search {
   position: relative;
 }
-
-.header_search_icon {
+.search_icon {
   position: absolute;
   top: 12px;
   left: 20px;
@@ -10,8 +9,7 @@
   font-weight: 300;
   color: #8ba3cb;
 }
-
-.header_search {
+.search_input {
   background-color: #f5f7fa;
   border: none;
   height: 40px;
@@ -22,17 +20,14 @@
   letter-spacing: 1px;
   text-align: center;
 }
-
-.header_search::-moz-placeholder {
+.search_input::-moz-placeholder {
   font-size: 12px;
   color: #8ba3cb;
 }
-
-.header_search::placeholder {
+.search_input::placeholder {
   font-size: 12px;
   color: #8ba3cb;
 }
-
-.header_search:focus-visible {
+.search_input:focus-visible {
   outline: 2px solid #8ba3cb;
 }/*# sourceMappingURL=Search.css.map */

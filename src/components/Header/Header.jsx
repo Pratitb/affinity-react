@@ -1,4 +1,4 @@
-import './Header.css';
+import './Header.scss';
 import Settings from '../Settings/Settings';
 import NotificationsWrap from '../NotificationsWrap/NotificationsWrap';
 import UserProfile from '../UserProfile/UserProfile';
@@ -50,7 +50,7 @@ function Header({ header_name, filterTableData }) {
 	return (
 		<div className="header">
 			<p className="header_name">{header_name}</p>
-			<div className="settings_wrap">
+			<div className="header_settings">
 				<Search filterTableData={filterTableData} />
 				<Settings />
 				<NotificationsWrap notifications={NotificationData} />

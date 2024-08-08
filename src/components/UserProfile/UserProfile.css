@@ -1,4 +1,11 @@
-.profile_wrap {
+.profile_icon {
+  background-color: #f5f7fa;
+  font-size: 40px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.profile {
   position: relative;
   cursor: pointer;
   width: 40px;

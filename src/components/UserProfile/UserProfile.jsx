@@ -1,3 +1,4 @@
+import './UserProfile.scss';
 import { useEffect, useRef, useState } from 'react';
 import ProfileMenu from '../ProfileMenu/ProfileMenu';
 import './UserProfile.css';
@@ -31,8 +32,8 @@ function UserProfile() {
 	}, []);
 
 	return (
-		<div className="profile_wrap">
-			<FaRegUser className="header_profile" onClick={handleProfile} />
+		<div className="profile">
+			<FaRegUser className="profile_icon" onClick={handleProfile} />
 			{showProfile && <ProfileMenu innerRef={profileMenuRef} />}
 		</div>
 	);

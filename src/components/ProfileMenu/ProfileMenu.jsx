@@ -1,6 +1,24 @@
-import './ProfileMenu.css';
+import Accordion from '../Accordion/Accordion';
+import './ProfileMenu.scss';
 
 function ProfileMenu({ innerRef }) {
+	const accordions = [
+		{
+			head: 'accordion',
+			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo nihil
+				quidem! Esse, eligendi reiciendis. Fuga maxime eveniet voluptates aut?`,
+		},
+		/* {
+			head: 'accordion 1',
+			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo nihil
+				quidem! Esse, eligendi reiciendis. Fuga maxime eveniet voluptates aut?`,
+		},
+		{
+			head: 'accordion 1',
+			content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quo nihil
+				quidem! Esse, eligendi reiciendis. Fuga maxime eveniet voluptates aut?`,
+		}, */
+	];
 	return (
 		<div className="profile_menu" ref={innerRef}>
 			<div className="profile_details">
@@ -23,7 +41,14 @@ function ProfileMenu({ innerRef }) {
 				<a>menu 1</a>
 				<a>menu 1</a>
 				<a>menu 1</a>
-				<a>menu 1</a>
+				{accordions.map((accordion) => {
+					return (
+						<Accordion
+							accordion_head={accordion.head}
+							accordion_content={accordion.content}
+						/>
+					);
+				})}
 			</div>
 		</div>
 	);

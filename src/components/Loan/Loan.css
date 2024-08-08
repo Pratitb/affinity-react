@@ -9,14 +9,12 @@
   border-radius: 15px;
   background-color: #fff;
 }
-
 .loan_name {
   font-size: 11px;
   color: #718ebf;
   text-transform: capitalize;
 }
-
-.card_loan_amt {
+.loan_card_amt {
   font-size: 13px;
   font-weight: 600;
 }
@@ -54,7 +52,7 @@
   .loan_name {
     font-size: 16px;
   }
-  .card_loan_amt {
+  .loan_card_amt {
     font-size: 18px;
   }
 }/*# sourceMappingURL=Loan.css.map */

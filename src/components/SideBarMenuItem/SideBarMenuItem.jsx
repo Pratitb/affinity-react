@@ -1,5 +1,5 @@
 import { FaReact } from 'react-icons/fa';
-import './SideBarMenuItem.css';
+import './SideBarMenuItem.scss';
 
 function SideBarMenuItem({
 	linkItem,
@@ -11,10 +11,7 @@ function SideBarMenuItem({
 
 	const handleSideLink = () => {
 		updateActiveLink(linkId);
-		console.log(linkId);
-		console.log(activeSideLink);
 	};
-	// console.log(LinkIcon);
 	return (
 		<a
 			key={linkItem.name}
@@ -23,7 +20,7 @@ function SideBarMenuItem({
 			}`}
 			onClick={handleSideLink}>
 			<LinkIcon className="sidebar_icon" />
-			<span className="link_text">{linkItem.name}</span>
+			<span className="sidebar_link_text">{linkItem.name}</span>
 		</a>
 	);
 }

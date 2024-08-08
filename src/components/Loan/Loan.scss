@@ -1,4 +1,5 @@
 @import '../../Mixins.scss';
+
 .loan {
 	@include flex(center, center, row);
 	gap: 0 10px;
@@ -6,15 +7,16 @@
 	padding: 18px 10px;
 	border-radius: 15px;
 	background-color: #fff;
-}
-.loan_name {
-	font-size: 11px;
-	color: #718ebf;
-	text-transform: capitalize;
-}
-.card_loan_amt {
-	font-size: 13px;
-	font-weight: 600;
+
+	&_name {
+		font-size: 11px;
+		color: #718ebf;
+		text-transform: capitalize;
+	}
+	&_card_amt {
+		font-size: 13px;
+		font-weight: 600;
+	}
 }
 .personal .loan_icon,
 .corporate .loan_icon,
@@ -42,10 +44,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-	.loan_name {
-		font-size: 16px;
-	}
-	.card_loan_amt {
-		font-size: 18px;
+	.loan {
+		&_name {
+			font-size: 16px;
+		}
+		&_card_amt {
+			font-size: 18px;
+		}
 	}
 }

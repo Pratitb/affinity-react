@@ -1,11 +1,10 @@
-import './Settings.css';
-
+import './Settings.scss';
 import { IoIosSettings } from 'react-icons/io';
 
 function Settings() {
 	return (
 		<>
-			<IoIosSettings className="header_sett" />
+			<IoIosSettings className="settings_btn" />
 		</>
 	);
 }

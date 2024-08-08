@@ -1,5 +1,5 @@
 import Loan from '../Loan/Loan';
-import './Loans.css';
+import './Loans.scss';
 
 function Loans({ loanArrObjs }) {
 	return (

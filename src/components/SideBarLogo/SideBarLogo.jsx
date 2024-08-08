@@ -1,4 +1,4 @@
-import './SideBarLogo.css';
+import './SideBarLogo.scss';
 
 function SideBarLogo() {
 	return (

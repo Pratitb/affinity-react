@@ -1,4 +1,4 @@
-.notification_menu {
+.n_box {
   position: absolute;
   right: 0;
   top: 60px;
@@ -8,21 +8,18 @@
   border: 1px solid #ddd;
   background-color: #fff;
 }
-
-.n_menu_top {
+.n_box_top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   margin-bottom: 20px;
 }
-
-.n_menu_head {
+.n_box_head {
   font-size: 20px;
   font-weight: 600;
 }
-
-.n_cross {
+.n_box_cross {
   font-size: 24px;
   line-height: 24px;
   color: #999;
@@ -37,8 +34,7 @@
   max-height: 290px;
   overflow-y: auto;
 }
-
-.n_card {
+.n_cards .n_card {
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -48,21 +44,16 @@
   border-radius: 8px;
   border: 1px solid #ddd;
 }
-
-.n_content {
+.n_cards .n_card_head {
+  font-weight: 600;
+}
+.n_cards .n_card_content {
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
   gap: 10px 0;
 }
-
-.n_content_head,
-.n_content_desc,
-.n_time {
+.n_cards .n_card_head, .n_cards .n_card_desc, .n_cards .n_card_time {
   font-size: 14px;
-}
-
-.n_content_head {
-  font-weight: 600;
 }/*# sourceMappingURL=NotificationsMenu.css.map */

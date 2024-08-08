@@ -1,31 +1,29 @@
 @import '../../Mixins.scss';
 @import '../../Variables.scss';
 
-.sidebar_link {
-	@include flex(start, center, row);
-	padding: 10px;
-	border-radius: 10px;
-	cursor: pointer;
+.sidebar {
+	&_link {
+		@include flex(start, center, row);
+		padding: 10px;
+		border-radius: 10px;
+		cursor: pointer;
+		&:hover {
+			background-color: rgba(224, 224, 224, 0.4);
+		}
+	}
+	&_icon {
+		font-size: 22px;
+		color: $light-grey;
+	}
+	&_link_text {
+		font-size: 14px;
+		margin-left: 20px;
+		color: $light-grey;
+		text-transform: capitalize;
+		cursor: pointer;
+	}
+	&_active_link &_link_text,
+	&_active_link &_icon {
+		color: $bright-blue;
+	}
 }
-.sidebar_link:hover {
-	background-color: rgba(224, 224, 224, 0.4);
-}
-.link_text {
-	font-size: 14px;
-	margin-left: 20px;
-	color: $light-grey;
-	text-transform: capitalize;
-	cursor: pointer;
-}
-.sidebar_active_link .link_text,
-.sidebar_active_link .sidebar_icon {
-	color: #1814f3;
-}
-.sidebar_icon {
-	font-size: 22px;
-	color: $light-grey;
-}
-// .loans .link_text,
-// .loans .sidebar_icon {
-// 	color: #1814f3;
-// }

@@ -6,32 +6,15 @@
   padding: 20px 30px;
   border-bottom: 1px solid #e6eff5;
 }
-
 .header_name {
   font-weight: 600;
   font-size: 28px;
   color: #343c6a;
 }
-
-.settings_wrap {
+.header_settings {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: row;
   gap: 0 20px;
-}
-
-.header_sett,
-.header_notification,
-.header_profile {
-  background-color: #f5f7fa;
-  font-size: 40px;
-  border-radius: 50%;
-  padding: 10px;
-}
-
-.header_sett {
-  color: #8ba3cb;
-}
-
-.header_notification {
-  color: #fe5c73;
 }/*# sourceMappingURL=Header.css.map */

@@ -1,6 +1,6 @@
 import ActiveLoans from '../ActiveLoans/ActiveLoans';
 import Loans from '../Loans/Loans';
-import './Overview.css';
+import './Overview.scss';
 import { FaUser, FaChartBar, FaTools, FaShoppingBag } from 'react-icons/fa';
 
 function Overview({ tableData }) {

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import SideBarMenuItem from '../SideBarMenuItem/SideBarMenuItem';
 import SideBarLogo from '../SideBarLogo/SideBarLogo';
-import './SideBarMenu.css';
+import './SideBarMenu.scss';
 
 function SideBarMenu({ linksObj }) {
 	const [activeSideLink, setActiveSideLink] = useState('loans');
@@ -10,7 +10,7 @@ function SideBarMenu({ linksObj }) {
 	};
 
 	return (
-		<div className="sidebar_menu">
+		<div className="sidebar">
 			{/* logo */}
 			<SideBarLogo />
 			{/* links */}

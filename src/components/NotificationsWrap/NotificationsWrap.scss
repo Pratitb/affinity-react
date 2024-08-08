@@ -1,14 +1,18 @@
+@import '../../Variables.scss';
 @import '../../Mixins.scss';
-.notification_wrap {
+.notification {
 	position: relative;
 	cursor: pointer;
 	width: 40px;
 	height: 40px;
-}
-.header_notification {
-	transition: all 0.3s;
-}
-.header_notification_active {
-	color: #fff;
-	background-color: #fe5c73;
+
+	&_icon {
+		@extend %header_btns;
+		color: $pink;
+		transition: all 0.3s;
+	}
+	&_icon_active {
+		color: #fff;
+		background-color: $pink;
+	}
 }

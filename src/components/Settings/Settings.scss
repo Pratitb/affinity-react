@@ -1,0 +1,7 @@
+@import '../../Variables.scss';
+@import '../../Mixins.scss';
+
+.settings_btn {
+	color: $indigo-blue;
+	@extend %header_btns;
+}

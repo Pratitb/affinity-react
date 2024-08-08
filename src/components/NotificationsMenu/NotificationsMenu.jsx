@@ -1,12 +1,12 @@
-import './NotificationsMenu.css';
+import './NotificationsMenu.scss';
 
 function NotificationsMenu({ innerRef, hideNotifications, notificationData }) {
 	return (
-		<div className="notification_menu" ref={innerRef}>
+		<div className="n_box" ref={innerRef}>
 			{/* NOTIFICATION HEADS */}
-			<div className="n_menu_top">
-				<p className="n_menu_head">Notifications</p>
-				<p className="n_cross" onClick={hideNotifications}>
+			<div className="n_box_top">
+				<p className="n_box_head">Notifications</p>
+				<p className="n_box_cross" onClick={hideNotifications}>
 					&#215;
 				</p>
 			</div>
@@ -15,11 +15,11 @@ function NotificationsMenu({ innerRef, hideNotifications, notificationData }) {
 				{notificationData.map((notification, index) => {
 					return (
 						<div key={index} className="n_card">
-							<div className="n_content">
-								<p className="n_content_head">{notification.head}</p>
-								<p className="n_content_desc">{notification.desc}</p>
+							<div className="n_card_content">
+								<p className="n_card_head">{notification.head}</p>
+								<p className="n_card_desc">{notification.desc}</p>
 							</div>
-							<p className="n_time">1d ago</p>
+							<p className="n_card_time">1d ago</p>
 						</div>
 					);
 				})}
