@@ -8,17 +8,17 @@ function ActiveLoans({ tableMainHead, tableHead, tableItem, filterData }) {
 	}
 
 	return (
-		<div className="active_loans_overview_wrap">
+		<div className="active_loans">
 			{/* MAIN HEAD */}
-			<p className="active_loan_head">{tableMainHead} overview</p>
-			<div className="table_wrap">
+			<p className="active_loans_head">{tableMainHead} overview</p>
+			<div className="active_loans_table_wrap">
 				<table className="active_loans_table">
 					{/* TABLE HEAD */}
 					<thead>
-						<tr className="table_heads">
+						<tr className="active_loans_table_heads">
 							{tableHead.map((head) => {
 								return (
-									<th key={head} className="table_head_item">
+									<th key={head} className="active_loans_table_head_item">
 										{head}
 									</th>
 								);

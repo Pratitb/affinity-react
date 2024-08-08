@@ -1,4 +1,4 @@
-import './TableTotal.css';
+import './TableTotal.scss';
 
 function TableTotal({ tableItem, formatNumber }) {
 	const totalLoan = tableItem.reduce((acc, item) => acc + item.loan_amt, 0);

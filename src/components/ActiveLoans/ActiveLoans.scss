@@ -1,32 +1,33 @@
-.active_loans_overview_wrap {
+.active_loans {
 	margin: 20px 0;
-}
-.active_loan_head {
-	font-weight: 600;
-	margin-bottom: 10px;
-	color: #333b69;
-	text-transform: capitalize;
-}
-.table_wrap {
-	padding: 15px 18px;
-	border-radius: 15px;
-	background-color: #fff;
-}
-.active_loans_table {
-	width: 100%;
-	table-layout: fixed;
-	border: none;
-	border-collapse: collapse;
-	background-color: #fff;
-}
-.table_heads {
-	display: flex;
-	justify-content: space-between;
-}
-.table_head_item {
-	font-size: 11px;
-	color: #718ebf;
-	text-transform: capitalize;
+
+	&_head {
+		font-weight: 600;
+		margin-bottom: 10px;
+		color: #333b69;
+		text-transform: capitalize;
+	}
+	&_table_wrap {
+		padding: 15px 18px;
+		border-radius: 15px;
+		background-color: #fff;
+	}
+	&_table {
+		width: 100%;
+		table-layout: fixed;
+		border: none;
+		border-collapse: collapse;
+		background-color: #fff;
+	}
+	&_table_heads {
+		display: flex;
+		justify-content: space-between;
+	}
+	&_table_head_item {
+		font-size: 11px;
+		color: #718ebf;
+		text-transform: capitalize;
+	}
 }
 th {
 	width: 100%;
@@ -36,10 +37,12 @@ th {
 }
 
 @media screen and (min-width: 1200px) {
-	.active_loan_head {
-		font-size: 18px;
-	}
-	.table_head_item {
-		font-size: 14px;
+	.active_loans {
+		&_head {
+			font-size: 18px;
+		}
+		&_table_head_item {
+			font-size: 14px;
+		}
 	}
 }

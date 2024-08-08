@@ -1,20 +1,17 @@
-.active_loans_overview_wrap {
+.active_loans {
   margin: 20px 0;
 }
-
-.active_loan_head {
+.active_loans_head {
   font-weight: 600;
   margin-bottom: 10px;
   color: #333b69;
   text-transform: capitalize;
 }
-
-.table_wrap {
+.active_loans_table_wrap {
   padding: 15px 18px;
   border-radius: 15px;
   background-color: #fff;
 }
-
 .active_loans_table {
   width: 100%;
   table-layout: fixed;
@@ -22,13 +19,11 @@
   border-collapse: collapse;
   background-color: #fff;
 }
-
-.table_heads {
+.active_loans_table_heads {
   display: flex;
   justify-content: space-between;
 }
-
-.table_head_item {
+.active_loans_table_head_item {
   font-size: 11px;
   color: #718ebf;
   text-transform: capitalize;
@@ -42,10 +37,10 @@ th {
 }
 
 @media screen and (min-width: 1200px) {
-  .active_loan_head {
+  .active_loans_head {
     font-size: 18px;
   }
-  .table_head_item {
+  .active_loans_table_head_item {
     font-size: 14px;
   }
 }/*# sourceMappingURL=ActiveLoans.css.map */
